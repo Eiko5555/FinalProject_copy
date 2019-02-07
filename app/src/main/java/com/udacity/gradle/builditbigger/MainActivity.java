@@ -13,8 +13,6 @@ import android.widget.Toast;
 import com.example.showjoke.ShowJoke;
 
 public class MainActivity extends AppCompatActivity {
-    Context context;
-    public static final String JOKING = "JOKE";;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,20 +42,4 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    public void tellJoke(View view) {
-        //getJoke
-//        Toast.makeText(this, "getJokes", Toast.LENGTH_SHORT).show();
-//
-//        String JOKE_LINE = "JOKE";
-//        Intent intent = new Intent(context, ShowJoke.class);
-//        //intent.putExtra(JOKE_LINE, String result);
-//        context.startActivity(intent);
-//        new EndpointAsyncTask().execute(new Pair<Context, String>(
-//                this, "placeholder"));
-    }
-
-
-
-
 }

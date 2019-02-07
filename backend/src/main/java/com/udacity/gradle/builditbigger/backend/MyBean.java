@@ -1,21 +1,21 @@
 package com.udacity.gradle.builditbigger.backend;
-/** The object model for the data we are sending through endpoints */
-import  com.udacity.gradle.builditbigger.MyJoke;
+/**
+ * The object model for the data we are sending through endpoints
+ */
+
+import com.udacity.gradle.builditbigger.MyJoke;
 
 public class MyBean {
 
     private String myData;
     private MyJoke myJoke;
 
-    MyBean(){
+    MyBean() {
         myJoke = new MyJoke();
     }
 
-//    public String getJoke(){
-//        return myJoke.getJoke();
-//    }
-    public String getJokes(){
-        return  myJoke.getJoke();
+    public String getJokes() {
+        return myJoke.getMyJoke();
     }
 
     public String getData() {
